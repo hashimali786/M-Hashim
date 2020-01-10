@@ -1,0 +1,657 @@
+
+Question 1
+In [ ]:
+Which of the following terms are related to dictionaries?
+a. value
+b. item
+c. index
+d. key
+
+In [ ]:
+a , b , d are tems related to dictionaries
+
+Question 2
+In [ ]:
+Just like lists, + operator is used to extend dictionaries?
+a. True
+b. False
+
+In [ ]:
+b
+
+Question 3
+In [ ]:
+To access items from a dictionary, we specify the index of that item within [] like myDict[0]?
+a. True
+b. False
+
+In [ ]:
+b
+
+Question 4
+In [ ]:
+When we use [] to access the value from a dictionary which does not exist in that dictionary….?
+a. Value within [] is added to the dictionary
+b. Value None is returned
+c. New dictionary is created
+d. None of above
+
+In [ ]:
+d
+
+Question 5
+In [ ]:
+What does return the pop method of a dictionary?
+a. list
+b. tuple containing the pair of last item of the dictionary
+c. dictionary
+d. value of the key, if it exists in the dictionary
+
+In [ ]:
+d
+
+Question 6
+In [ ]:
+What does return popitem method return?
+a. dictionary
+b. tupple containing the pair of last item of the dictionary
+c. list
+d. value of key, if it exists in the dictionary
+
+In [ ]:
+b
+
+Question 7
+In [ ]:
+. Which of the following 2 methods can be used to iterate through the items of a dictionary?
+a. items()
+b. values()
+c. indexes()
+d. keys()
+
+In [ ]:
+a , b , d
+
+Question 8
+In [ ]:
+Which one of the following is used to enclose a dictionary?
+a. () parenthesis
+b. {} curly brackets
+c. [] square brackets
+d. “” quotation marks
+
+In [ ]:
+b
+
+Question 9
+In [88]:
+key=input("Enter the key to be added:")
+value=input("Enter the value for the key to be added:")
+d={}
+d.update({key:value})
+print("Updated dictionary is:")
+print(d)
+Enter the key to be added:name 
+Enter the value for the key to be added:Hashim
+Updated dictionary is:
+{'name ': 'Hashim'}
+
+Question 10
+In [89]:
+A_String=input("Enter a String:")
+A_List=[]
+A_List=A_String.split()
+for p in A_List:
+    freq_of_word=A_List.count(p) 
+print(dict(zip(A_List,freq_of_word)))
+Enter a String:hello Hashim hello
+---------------------------------------------------------------------------
+TypeError                                 Traceback (most recent call last)
+<ipython-input-89-35d4d9ed3a19> in <module>
+      4 for p in A_List:
+      5     freq_of_word=A_List.count(p)
+----> 6 print(dict(zip(A_List,freq_of_word)))
+
+TypeError: zip argument #2 must support iteration
+
+In [ ]:
+test_string=input("Enter string:")
+l=[]
+l=test_string.split()
+wordfreq=[l.count(p) for p in l]
+if wordfreq%2 == 0:
+    print(dict(zip(l,wordfreq)))
+
+In [ ]:
+statement = input("enter a statement:   ")
+l1 = []
+l1 = statement.split()
+for x in l1:
+    freq = l1.count(x)
+    if (freq%2 == 0):
+        print(zip(l1 , freq))
+
+In [ ]:
+def wordListToFreqDict(wordlist):
+    wordfreq = [wordlist.count(p) for p in wordlist]
+    return dict(list(zip(wordlist,wordfreq)))
+
+Question 11
+In [8]:
+X = ["Feb", "Apr"," Mar"," May", "Jun"," Jul"," Aug", "Jan"] #. What will be output of following?
+X[0:3]
+
+Out[8]:
+['Feb', 'Apr', ' Mar', ' May']
+
+In [5]:
+X[2:8]
+
+Out[5]:
+[' Mar', ' May', 'Jun', ' Jul', ' Aug', 'Jan']
+
+In [6]:
+X[4:9]
+
+Out[6]:
+['Jun', ' Jul', ' Aug', 'Jan']
+
+In [7]:
+X[1:7:2]
+
+Out[7]:
+['Apr', ' May', ' Jul']
+
+In [9]:
+X[-1:-7]
+
+Out[9]:
+[]
+
+In [10]:
+X[-7:7]
+
+Out[10]:
+['Apr', ' Mar', ' May', 'Jun', ' Jul', ' Aug']
+
+In [11]:
+X[-1:-8:-2]
+
+Out[11]:
+['Jan', ' Jul', ' May', 'Apr']
+
+In [12]:
+X[:4]
+
+Out[12]:
+['Feb', 'Apr', ' Mar', ' May']
+
+question 12
+In [13]:
+#Remove the correct number from the list X
+X = [ 9,2,8,4,5]
+X.remove(9)   # answer is 3 remove
+print (X)
+
+[2, 8, 4, 5]
+
+Question 13
+In [19]:
+p = 3
+ q = 'hello! '
+ print( q*p) # answer is 1 *
+
+hello! hello! hello! 
+
+Question 14
+In [21]:
+y = "this is a random sentence"
+print (y.upper())  # upper
+
+THIS IS A RANDOM SENTENCE
+
+Question 15
+In [23]:
+p = True
+q = "True"
+s = 2
+r = 2.0
+print(type(p))
+print(type(q))
+print(type(r))
+print(type(s))
+
+<class 'bool'>
+<class 'str'>
+<class 'float'>
+<class 'int'>
+
+Question 16
+In [ ]:
+. What are the optional arguments to the function?
+function_1(R1, q, p=None, R2= None)
+1) q and R2
+2) p and R2
+3) p and R1
+4) R1 and q
+
+In [ ]:
+2 are optional arguments to the function
+
+Question 17
+In [ ]:
+7. Which command invokes method X() of the object p?
+1) X(p)
+2) p$x()
+3) X().p
+4) p.x()
+
+In [ ]:
+4 is invokes methodX() of the object p
+
+Question 18
+In [26]:
+X = 4 
+Y = 2
+print(X % Y)
+print(X / Y)
+print(X // Y)
+print(Y % X)
+
+0
+2.0
+2
+2
+
+Question 19
+In [50]:
+x = [[4, 1, 1], [5, 9, 0]]
+for i in x:
+    for j in i:
+        print(j)
+
+4
+1
+1
+5
+9
+0
+
+In [72]:
+x = [[4, 1, 1], [5, 9, 0]]
+for i in x[:]:
+    for j in i:
+        print(j, end = "\t")
+
+4	1	1	5	9	0	
+
+In [74]:
+x = [[4, 1, 1], [5, 9, 0]]
+for i in x[:]:
+    for j in i:
+        print(j, end = "\t")
+    print("\n")
+
+4	1	1	
+
+5	9	0	
+
+In [83]:
+x = [[4, 1, 1], [5, 9, 0]]
+for i in x[:]:
+    for j in i:
+        print(j)
+
+4
+	1
+1
+5
+9
+0
+	
+Question 20
+In [86]:
+q = [10.62, 16.14, 6.45, 17.11]
+for j, z in enumerate (q) :
+    print( "Item " + str( j ) + " - " , str ( z ))
+
+Item 0 -  10.62
+Item 1 -  16.14
+Item 2 -  6.45
+Item 3 -  17.11
+
+Question 21
+In [ ]:
+Which of these about a dictionary is false?
+a) The values of a dictionary can be accessed using keys
+b) The keys of a dictionary can be accessed using values
+c) Dictionaries aren’t ordered
+d) Dictionaries are mutable
+
+In [ ]:
+b the vaues of a dictionary ca be accessed using value
+
+Question 22
+In [89]:
+D = dict()
+for i in range (3):
+    for j in range(2):
+        D[i] = j
+        print(D)
+
+{0: 0}
+{0: 1}
+{0: 1, 1: 0}
+{0: 1, 1: 1}
+{0: 1, 1: 1, 2: 0}
+{0: 1, 1: 1, 2: 1}
+
+In [ ]:
+a. {0: 1, 1: 1, 2: 1}
+
+Question 23
+In [ ]:
+You are writing a function that increments player score in a soccer game
+If no value is specified for points, then point must start with 1
+If no value is specified for bonus, then bonus should be True
+01 def increment_score ( bonus , score , points ):
+To meet the first requirement line 01 must be change to
+ def increment_score ( bonus , score , points = 1 ): (True or False)
+To meet the second requirement line 01 must be change to
+ def increment_score ( bonus = True , score , points = 1 ): (True or False)
+ Once a parameter is defined with default value, any parameter to the right must also be defined
+with default values (True or False)
+
+In [ ]:
+true
+true
+false
+
+Question 24
+In [91]:
+def avg ( x , y , z = 50 ):
+    adding = x + y + z
+    avg_value = adding / 3
+    return avg_value
+y = avg ( x = 5 , y = 9 , z = 20 )
+print(y)
+
+11.333333333333334
+
+Question 25
+In [7]:
+def avg ( *opt_values , name ):
+    avg_value = sum (opt_values) / len(opt_values)
+    print("name is: " + name + "Marks: " + str(avg_value))
+avg (5 , 9 , 20, 34, 87, 112 , name = "Ali")
+
+name is: AliMarks: 44.5
+
+Question 26
+In [8]:
+def display_result(winner, score, **other_info):
+    print("The winner was " + winner)
+    print("The score was " + score)
+display_result(winner="Manchester", score="1-0", overtime ="yes", injuries="none")
+
+The winner was Manchester
+The score was 1-0
+
+In [9]:
+def display_result(winner, score, *other_info):
+    print("The winner was " + winner)
+    print("The score was " + score)
+display_result(winner="Manchester", score="1-0", overtime ="yes", injuries="none")
+
+---------------------------------------------------------------------------
+
+TypeError                                 Traceback (most recent call last)
+<ipython-input-9-39f1c3701340> in <module>
+      2     print("The winner was " + winner)
+      3     print("The score was " + score)
+----> 4 display_result(winner="Manchester", score="1-0", overtime ="yes", injuries="none")
+
+TypeError: display_result() got an unexpected keyword argument 'overtime'
+
+In [10]:
+def display_result(winner, score, *other_info):
+    print("The winner was " + winner)
+    print("The score was " + score)
+display_result(winner="Manchester", score="1-0", overtime ="yes", injuries="none")
+
+---------------------------------------------------------------------------
+TypeError                                 Traceback (most recent call last)
+<ipython-input-10-39f1c3701340> in <module>
+      2     print("The winner was " + winner)
+      3     print("The score was " + score)
+----> 4 display_result(winner="Manchester", score="1-0", overtime ="yes", injuries="none")
+
+TypeError: display_result() got an unexpected keyword argument 'overtime'
+
+Question 27
+In [12]:
+def display_result(winner, **other_info, score):
+    print("The winner was " + winner)
+    print("The score was " + score)
+display_result(winner="Manchester", overtime ="yes", injuries="none" , score="1-0" )
+
+  File "<ipython-input-12-024b5cda6812>", line 1
+    def display_result(winner, **other_info, score):
+                                                 ^
+SyntaxError: invalid syntax
+
+In [13]:
+def display_result(winner, score, **other_info):  # you can pass your argumnet by changing their places but in parameter 
+    print("The winner was " + winner)              # you have to care about the position
+    print("The score was " + score)
+display_result(winner="Manchester", overtime ="yes", injuries="none" , score="1-0" )
+
+The winner was Manchester
+The score was 1-0
+
+In [15]:
+def display_result(winner, score,**other_info):
+    print("The winner was " + winner)
+    print("The score was " + score)
+display_result(winner="Manchester", score="1-0" ,overtime ="yes", injuries="none"  )
+
+The winner was Manchester
+The score was 1-0
+
+Question 28
+In [17]:
+X = 123   # choose b option
+print("%06d"%X)
+
+000123
+
+Question 29
+In [18]:
+x=22.19   # choose c option
+print("%5.2f"%x)
+
+22.19
+
+Question 30
+In [19]:
+'{0:f}, {1:2f}, {2:05.2f}'.format(1.23456, 1.23456, 1.23456) #chose option d
+
+Out[19]:
+'1.234560, 1.234560, 01.23'
+
+Question 31
+In [22]:
+i = 1
+while False:           # it will run only once becuase when it will reach at break statement the program will end
+    if i%2 == 0:
+        break
+    print(i)
+    i += 2
+print(i)
+
+1
+
+Question 32
+In [23]:
+x = "abcdef"
+i = "a"
+while i in x:
+    x = x[:-1]
+    print(i, end = " ")
+
+a a a a a a 
+
+Question 33
+In [24]:
+for i in ''.join(reversed(list('abcd'))):
+    print (i)
+
+d
+c
+b
+a
+
+Question 34
+In [25]:
+for i in range(10):
+    if i == 5:
+        break
+    else:
+        print(i)
+else:
+    print("Here")
+
+0
+1
+2
+3
+4
+
+Question 35
+In [27]:
+y = 6
+z = lambda x: x * y
+print(z)
+
+<function <lambda> at 0x0000015E97816DC8>
+
+Question 36
+In [29]:
+i=0
+def change(i):
+    i=i+1
+    return i
+
+print(change(1))
+
+2
+
+Question 37
+In [30]:
+def change(one, *two):
+    print(type(two))
+    print(two)
+change(1,2,3,4)
+
+<class 'tuple'>
+(2, 3, 4)
+
+Question 38
+In [31]:
+def find(a, **b):
+    print(type(b))
+find('letters',A='1',B='2')
+
+<class 'dict'>
+
+Question 39
+In [32]:
+def foo(i, x=[]):
+    x.append(i)
+    return x
+for i in range(3):
+    print(foo(i))
+
+[0]
+[0, 1]
+[0, 1, 2]
+
+Question 40
+In [33]:
+x = (3*(1+2)**2 - (2**2)*3)  # first solve brackets and then go left to right solve exponential part (power) and do multiply abd then subtract
+print(x)
+
+15
+
+Question 41
+In [ ]:
+You are creating a function that manipulates a number. The function has the following requirements:
+ A float is passed into the function
+ The function must take the absolute value of the float
+ Any decimal points after the integer must be removed
+
+In [49]:
+import math
+def remove_decimal(x):  # choose c but if you want ans with round about so you can choose math.ceil but inthis case we choose floor
+    y = math.floor(x)
+    return y
+print(remove_decimal(1.678))
+
+1
+
+Question 42
+In [60]:
+You are writing code that generates a random integer with a minimum value of 5 and a maximum
+value of 11.
+Which two functions should you use? Each correct answer presents a complete solution. (Choose two.)
+A. random.randint(5, 12)
+B. random.randint(5, 11)
+C. random.randrange(5, 12, 1)
+D. random.randrange(5, 11, 1)
+  File "<ipython-input-60-34db663fca28>", line 1
+    You are writing code that generates a random integer with a minimum value of 5 and a maximum
+          ^
+SyntaxError: invalid syntax
+
+In [80]:
+import random
+print(random.randrange(5, 12,1)) # in range 12 does not include
+
+6
+
+In [81]:
+import random
+print(random.randint(5, 11)) # in randint both endpoints include
+
+10
+
+Question 43
+In [ ]:
+Write a program that receives marks from user and check the grade.
+Marks greater than equal to 90 then A grade
+Marks between 80 to 90, B grade
+Marks between 70 to 80, C grade
+Marks between 60 to 70, D grade
+Marks less than equal to 60 then E grade
+
+In [87]:
+user = int(input("enter your makrs: "))
+if user < 60: 
+    print("GRADE F")
+elif user == 60 or user > 70 :
+    print("GRADE D")
+elif user == 70 or user > 80 :
+    print("GRADE C")
+elif user == 80 or user  >90: 
+    print("GRADE B")
+elif user == 90 :
+    print("GRADE A")
+else:
+    print("enter valid marks")
+enter your makrs: 60
+
+GRADE D
+
+In [ ]:
+
+In [ ]:
